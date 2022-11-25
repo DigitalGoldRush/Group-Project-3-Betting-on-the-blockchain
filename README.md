@@ -43,9 +43,11 @@
 
 - ### Here is the transaction revert error
 
-[![Gambling Image](https://github.com/DigitalGoldRush/Group-Project-3-Betting-on-the-blockchain/blob/main/media/VM%20exception%20error:%20revert.png)](https://github.com/DigitalGoldRush/Group-Project-3-Betting-on-the-blockchain/blob/main/media/VM%20exception%20error:%20revert.png)
+[![Error message](https://github.com/DigitalGoldRush/Group-Project-3-Betting-on-the-blockchain/blob/main/media/VM%20exception%20error:%20revert.png)](https://github.com/DigitalGoldRush/Group-Project-3-Betting-on-the-blockchain/blob/main/media/VM%20exception%20error:%20revert.png)
 
 - ### Here are the instructions to clear the error
+
+[![resolution gif](https://github.com/DigitalGoldRush/Group-Project-3-Betting-on-the-blockchain/blob/main/media/troubleshooting%20error.gif)](https://github.com/DigitalGoldRush/Group-Project-3-Betting-on-the-blockchain/blob/main/media/troubleshooting%20error.gif)
 
 - 1. #### The state function buttons (orange) need to be pressed in the order of the smart contract format
 
