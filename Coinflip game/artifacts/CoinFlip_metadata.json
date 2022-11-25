@@ -232,7 +232,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Group Projects/Group_Project_3_Coinflip_BlackJack/Coinflip game/test_game.sol": "CoinFlip"
+			"Group Projects/Group-Project-3-Betting-on-the-blockchain/Coinflip game/test_game.sol": "CoinFlip"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -243,7 +243,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"Group Projects/Group_Project_3_Coinflip_BlackJack/Coinflip game/test_game.sol": {
+		"Group Projects/Group-Project-3-Betting-on-the-blockchain/Coinflip game/test_game.sol": {
 			"keccak256": "0xb91d9ae8bd0246d431edf1abbc44b695b3fd7df5aea2c1a752174e23539da9ff",
 			"urls": [
 				"bzz-raw://dd84e7466fbc4e425266000760b5638c7f132dbe553914ab4bac97963d20de3f",

@@ -11,7 +11,7 @@ import streamlit as st
 from streamlit_lottie import st_lottie  
 import requests
 
-os.chdir('/Users/michaeldionne/Documents/GitHub/Group Projects/Group_Project_3_Coinflip_BlackJack/Coinflip game/')
+# os.chdir('/Users/michaeldionne/Documents/GitHub/Group Projects/Group_Project_3_Coinflip_BlackJack/Coinflip game/')
 
 load_dotenv('.env')
 
