@@ -1,45 +1,56 @@
-# Group Project #3: Rock, Paper, Scissors
+# Group Project #3: Betting on the Blockchain
 
+## 1. Building smart contracts that run games of chance
 
+### 1.1. The Coin Flip
 
-### 1. 
+- ### Coin flip is a simple game of chance where the user bets on the outcome of a coin flip. The user can bet on heads or tails and the contract will return the user's bet if they win and return nothing if they lose
 
+### 1.2. Black Jack
+
+- ### Black Jack is a game of chance where the user bets on the outcome of a game of Black Jack
+
+- ### The user can bet on the dealer or the player winning. The contract will return the user's bet if they win and return nothing if they lose
+
+### 2. Building a web app (Streamlit) that allows users to interact with the smart contracts
 
 ## Summary of Findings
 
-- ### 
+- ### [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/digitalgoldrush/project-2-emotional-recognition/main/Emotion_recognition.ipynb)
+
 ---
 
 ## Technology Used
 
-
-[![Python 3.7.13](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)]([https://www.python.org/downloads/release/python-3912/)
 [![Python](https://img.shields.io/badge/Python-3.9.12-blue)](https://www.python.org/downloads/release/python-3912/)
-
 
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DigitalGoldRush?tab=repositories)
 
+[![Solidity](https://img.shields.io/badge/Solidity-0.8.9-blue)](https://docs.soliditylang.org/en/v0.8.9/)
 
-[![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/stable/index.html)
-
-streamlit 0.88.0  [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/digitalgoldrush/project-2-emotional-recognition/main/Emotion_recognition.ipynb)
+[![Streamlit](https://img.shields.io/badge/Streamlit-0.88.0-blue)](https://docs.streamlit.io/en/stable/)
 
 ---
 
-## Installation Guide
+## Troubleshooting
 
-### 1. Run the program in Google Colab [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com)
+- ### A common problem encountered is a transaction revert error on the streamlit app.  This is due to some component of the smart contract (that Streamlit interfaces with) is not fulfilled. In that case the user should interact directly with the deployed smart contract on Remix
 
-- ### Tensorflow will run in Colab
+- ### Here is the transaction revert error
 
-- ### All the necessary libraries will be installed on Colab
+- ### Here are the instructions to clear the error
 
-### 2. To install Streamlit on your local machine, run the following command in your terminal
+- 1. #### The state function buttons (orange) need to be pressed in the order of the smart contract format
 
-```bash
-pip install streamlit
-streamlit hello
-```
+- 2. #### The error is from the player choosing a coin side to flip and did not press the "choose" button on streamlit. By skipping ahead to the "get outcome" button it skipped the state function "playerChoice" on the smart contract causing the error
+
+- 3. #### To resolve this error, the player must go to the deployed contract on Remix
+
+- 4. #### The "playerChoice" button with the choice ( heads = 1, tails =2) needs to be entered
+
+- 5. #### Then the "getOutcome" button needs to be depressed. This is the "coinflip" portion
+
+- 6. ####  Finally, the "reset_contract" button can be pressed to end the current contract and start a new instance. The player can go back to streamlit and refresh the app & begin a new game
 
 ---
 
@@ -47,6 +58,6 @@ streamlit hello
 
 [![Python](https://img.shields.io/badge/Michael_Dionne-LinkedIn-blue)](https://www.linkedin.com/in/michael-dionne-b2a1b61b/)
 
-## Erick Esparza
+[![Python](https://img.shields.io/badge/David_Lampach-LinkedIn-blue)](https://www.linkedin.com/in/david-lampach-1b21133a/)
 
 ---
