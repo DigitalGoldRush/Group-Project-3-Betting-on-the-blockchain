@@ -39,7 +39,7 @@
 
 ## Troubleshooting
 
-- ### A common problem encountered is a transaction revert error on the streamlit app.  This is due to some component of the smart contract (that Streamlit interfaces with) is not fulfilled. In that case the user should interact directly with the deployed smart contract on Remix
+- ### A common problem encountered is a transaction revert error on the streamlit app. This ("ContractLogicError") is due to some component of the smart contract (that Streamlit interfaces with) is not fulfilled. In that case the user should interact directly with the deployed smart contract on Remix
 
 - ### Here is the transaction revert error
 
