@@ -3,7 +3,7 @@
 [![Gambling Image](https://github.com/DigitalGoldRush/Group-Project-3-Betting-on-the-blockchain/blob/main/media/gambling%20image.jpeg)](https://github.com/DigitalGoldRush/Group-Project-3-Betting-on-the-blockchain/blob/main/media/gambling%20image.jpeg)
 
 
-## 1. Building smart contracts that run games of chance
+## Building smart contracts that run games of chance
 
 ### 1.1. The Coin Flip
 
@@ -16,6 +16,8 @@
 - ### The user can bet on the dealer or the player winning. The contract will return the user's bet if they win and return nothing if they lose
 
 ### 2. Building a web app (Streamlit) that allows users to interact with the smart contracts
+
+---
 
 ## Summary of Findings
 
@@ -41,7 +43,7 @@
 
 - ### Here is the transaction revert error
 
-
+[![Gambling Image](https://github.com/DigitalGoldRush/Group-Project-3-Betting-on-the-blockchain/blob/main/media/VM%20exception%20error:%20revert.png)](https://github.com/DigitalGoldRush/Group-Project-3-Betting-on-the-blockchain/blob/main/media/VM%20exception%20error:%20revert.png)
 
 - ### Here are the instructions to clear the error
 
