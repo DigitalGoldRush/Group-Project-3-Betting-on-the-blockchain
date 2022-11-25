@@ -1,10 +1,13 @@
 # Group Project #3: Betting on the Blockchain
 
+[![Gambling Image](https://github.com/DigitalGoldRush/Group-Project-3-Betting-on-the-blockchain/blob/main/media/gambling%20image.jpeg)](https://github.com/DigitalGoldRush/Group-Project-3-Betting-on-the-blockchain/blob/main/media/gambling%20image.jpeg)
+
+
 ## 1. Building smart contracts that run games of chance
 
 ### 1.1. The Coin Flip
 
-- ### Coin flip is a simple game of chance where the user bets on the outcome of a coin flip. The user can bet on heads or tails and the contract will return the user's bet if they win and return nothing if they lose
+- ### Coin flip is a simple game of chance with only two outcomes, heads or tails. The contract will return double the user's bet if they win and return nothing if they lose
 
 ### 1.2. Black Jack
 
@@ -24,11 +27,11 @@
 
 [![Python](https://img.shields.io/badge/Python-3.9.12-blue)](https://www.python.org/downloads/release/python-3912/)
 
-[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DigitalGoldRush?tab=repositories)
-
 [![Solidity](https://img.shields.io/badge/Solidity-0.8.9-blue)](https://docs.soliditylang.org/en/v0.8.9/)
 
 [![Streamlit](https://img.shields.io/badge/Streamlit-0.88.0-blue)](https://docs.streamlit.io/en/stable/)
+
+[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DigitalGoldRush?tab=repositories)
 
 ---
 
@@ -37,6 +40,8 @@
 - ### A common problem encountered is a transaction revert error on the streamlit app.  This is due to some component of the smart contract (that Streamlit interfaces with) is not fulfilled. In that case the user should interact directly with the deployed smart contract on Remix
 
 - ### Here is the transaction revert error
+
+
 
 - ### Here are the instructions to clear the error
 
