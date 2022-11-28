@@ -1,0 +1,61 @@
+import json
+from web3 import Web3
+from web3.gas_strategies.time_based import medium_gas_price_strategy
+from web3 import Web3
+from pathlib import Path
+
+
+# Define and connect a new Web3 provider
+w3 = Web3(Web3.HTTPProvider('http://127.0.0.1:7545/'))
+
+with open(Path('rps_abi.json')) as f:
+    contract_abi = json.load(f)
+
+contract_address = "0xd200DB9083A5Fd700c9e6bD5DA959421E748D735"
+
+contract = w3.eth.contract(
+        address=contract_address,
+        abi=contract_abi
+    )
+
+accounts = w3.eth.accounts
+
+address = "0x4AD281C2Ff3a2635878B00DE2D33EE828dba2Bd0"
+address2 = "0x528B3026ED873f4Dd851902AA055208492F7C923"
+
+
+def get_balance(w3, address):
+    """Using an Ethereum account address access the balance of Ether"""
+    # Get balance of address in Wei
+    wei_balance = w3.eth.get_balance(address)
+
+    # Convert Wei value to ether
+    ether = w3.fromWei(wei_balance, "ether")
+
+    # Return the value in ether
+    return ether
+
+
+#receipt = contract.functions.BET_MIN().call()
+
+#receipt = contract.functions.register({"from": address, "value": 10})
+#print(receipt)
+
+#ontract_function = contract.functions.register()
+#x_hash = contract_function.transact({"from": w3.eth.accounts[0], "value": 10})
+
+#tx_hash = contract.transact({"from":w3.eth.accounts[0],"value":10})
+
+#tx_hash = contract.transact(transact_params).setSomeAddress(w3.eth.accounts[0])
+#receipt = w3.ethnsactionReceipt(tx_hash)
+
+#account = w3.eth.accounts[0]
+#test = send_transaction(w3, account, address2, 10)
+
+#print(get_balance(w3, address))
+
+contract.functions.register().transact({"from": w3.eth.accounts[0], "value": 10, "gasPrice": w3.eth.gas_price,})
+
+#contract.functions.transfer(contract_address, 10000000000000000000).transact({"from": address})
+
+print('it ran!')
